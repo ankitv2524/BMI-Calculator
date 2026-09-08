@@ -1,7 +1,7 @@
 import streamlit as st
 
 #Title of the App
-st.header("BMI Calculator (Dolly Didi)")
+st.header("BMI Calculator")
 
 #Insert and Image
 from PIL import Image
@@ -24,7 +24,7 @@ if st.button("Calculate BMI"):
         if height_unit == "Centimeters":
             height_m = height / 100
         elif height_unit == "Feet":
-            height_m == height / 3.28
+            height_m = height / 3.28
         else:
             height_m = height
 
