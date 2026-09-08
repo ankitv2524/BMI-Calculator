@@ -1,89 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+# BMI Calculator
 
-    <header>
-        <div class="logo">
-            <span>💪</span>
-            <h2>FitCheck</h2>
-        </div>
+A simple and responsive BMI (Body Mass Index) Calculator built using HTML and CSS. This web application allows users to enter their height and weight to calculate their BMI and understand their weight category.
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About BMI</a>
-        </nav>
-    </header>
+## Features
 
-    <main id="home">
-        <section class="calculator-container">
-            <h1>BMI Calculator</h1>
+- Clean and user-friendly interface
+- Responsive design for desktop and mobile devices
+- Input fields for height and weight
+- BMI result display
+- Health categories such as underweight, normal weight, overweight, and obesity
 
-            <p class="description">
-                Calculate your Body Mass Index and understand your weight category.
-            </p>
+## Technologies Used
 
-            <div class="input-box">
-                <label for="weight">Weight (kg)</label>
-                <input type="number" id="weight" placeholder="Enter your weight">
-            </div>
+- HTML5
+- CSS3
 
-            <div class="input-box">
-                <label for="height">Height (cm)</label>
-                <input type="number" id="height" placeholder="Enter your height">
-            </div>
+## Project Structure
 
-            <button>Calculate BMI</button>
+```text
+BMI-Calculator/
+│
+├── index.html
+├── style.css
+└── README.md
+```
 
-            <div class="result">
-                <h3>Your BMI Result</h3>
-                <p>Enter your details to calculate BMI.</p>
-            </div>
-        </section>
+## How to Run the Project
 
-        <section class="bmi-info" id="about">
-            <h2>What is BMI?</h2>
-            <p>
-                Body Mass Index (BMI) is a value calculated using a person's
-                height and weight. It gives a general indication of whether a
-                person's weight is within a healthy range.
-            </p>
+1. Clone this repository:
 
-            <h3>BMI Formula</h3>
-            <p><strong>BMI = Weight (kg) / Height² (m²)</strong></p>
+```bash
+git clone [https://github.com/ankitv2524/BMI-Calculator.git](https://github.com/ankitv2524/BMI-Calculator.git)
+```
 
-            <div class="categories">
-                <div class="category underweight">
-                    <h4>Underweight</h4>
-                    <p>Below 18.5</p>
-                </div>
+2. Open the project folder:
 
-                <div class="category normal">
-                    <h4>Normal Weight</h4>
-                    <p>18.5 - 24.9</p>
-                </div>
+```bash
+cd BMI-Calculator
+```
 
-                <div class="category overweight">
-                    <h4>Overweight</h4>
-                    <p>25 - 29.9</p>
-                </div>
+3. Open the `index.html` file in any web browser.
 
-                <div class="category obesity">
-                    <h4>Obesity</h4>
-                    <p>30 and above</p>
-                </div>
-            </div>
-        </section>
-    </main>
+## BMI Formula
 
-    <footer>
-        <p>© 2026 BMI Calculator | Created by Ankit Verma</p>
-    </footer>
+BMI is calculated using the following formula:
 
-</body>
-</html>
+```text
+BMI = Weight (kg) / Height² (m²)
+```
+
+## BMI Categories
+
+| BMI Range | Category |
+|---|---|
+| Less than 18.5 | Underweight |
+| 18.5 - 24.9 | Normal weight |
+| 25 - 29.9 | Overweight |
+| 30 or more | Obesity |
+
+## Future Improvements
+
+- Add JavaScript to calculate BMI automatically
+- Add input validation
+- Display personalized health messages
+- Add a dark mode option
+
+## Author
+
+**Ankit Verma**
+
+GitHub: [ankitv2524](https://github.com/ankitv2524)
+
+## Disclaimer
+
+This project is created for learning and educational purposes only. BMI is a general screening measure and should not replace professional medical advice.
